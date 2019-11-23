@@ -1,6 +1,7 @@
 <script>
   export let value = null;
-  console.log($$props);
+  export let type = "label";
+
   const SLOTS = $$props.$$slots;
 </script>
 <style>
@@ -13,6 +14,12 @@ td {
   {#if SLOTS}
     <slot/>
   {:else}
-    {value}
+    {#if type == "label"}
+      {value}
+    {:else}
+      {#if type == 'input'}
+        <input bind:value={value}/>
+      {/if}
+    {/if}
   {/if}
 </td>

@@ -23,8 +23,8 @@
   <Rows>
     {#each products as product}
       <Row on:click={() => handleClick(product)}>
-        <Cell value={product.title}/>
-        <Cell value={product.price}/>
+        <Cell type="input" bind:value={product.title}/>
+        <Cell type="input" bind:value={product.price}/>
         <Cell>
           <IconButton icon="trash" on:click={() => handleRemove(product)}/>
         </Cell>
