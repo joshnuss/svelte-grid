@@ -1,11 +1,11 @@
 <style>
-th {
+tr {
   background: #ccc;
 }
 
 </style>
 <thead>
-  <th>
+  <tr>
     <slot/>
-  </th>
+  </tr>
 </thead>
