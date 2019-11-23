@@ -5,8 +5,11 @@
 </script>
 
 <style>
+  tr {
+    cursor: pointer;
+  }
   tr:hover {
-    background: #eee
+    background: #eee;
   }
 </style>
 
