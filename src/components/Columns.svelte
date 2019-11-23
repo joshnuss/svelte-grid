@@ -2,8 +2,8 @@
 tr {
   background: #ccc;
 }
-
 </style>
+
 <thead>
   <tr>
     <slot/>
