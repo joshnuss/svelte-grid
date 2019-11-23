@@ -4,9 +4,13 @@
 
   const SLOTS = $$props.$$slots;
 </script>
+
 <style>
 td {
   border-bottom: solid 1px #ccc;
+}
+input {
+  border: none;
 }
 </style>
 
