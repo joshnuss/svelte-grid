@@ -23,6 +23,7 @@
 <Grid>
   <Columns>
     <Column>Title</Column>
+    <Column>Price</Column>
   </Columns>
   <Rows>
     {#each products as product}
