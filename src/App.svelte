@@ -1,5 +1,7 @@
 <script>
   import Grid from './components/Grid.svelte';
+  import Columns from './components/Columns.svelte';
+  import Column from './components/Column.svelte';
   import Rows from './components/Rows.svelte';
   import Row from './components/Row.svelte';
   import Cell from './components/Cell.svelte';
@@ -19,6 +21,9 @@
 </script>
 
 <Grid>
+  <Columns>
+    <Column>Title</Column>
+  </Columns>
   <Rows>
     {#each products as product}
       <Row on:click={() => handleClick(product)}>
