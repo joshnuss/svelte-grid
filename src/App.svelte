@@ -32,3 +32,7 @@
     {/each}
   </Rows>
 </Grid>
+
+<pre>
+  {JSON.stringify(products, null, 2)}
+</pre>
