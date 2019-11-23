@@ -5,7 +5,5 @@ table {
 </style>
 
 <table>
-  <tbody>
-    <slot/>
-  </tbody>
+  <slot/>
 </table>
