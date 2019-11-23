@@ -6,10 +6,10 @@ const products = [
 ]
 
 const app = new App({
-	target: document.body,
-	props: {
-		products
-	}
+  target: document.body,
+  props: {
+    products
+  }
 });
 
 export default app;

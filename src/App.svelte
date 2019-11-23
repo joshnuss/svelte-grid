@@ -4,7 +4,7 @@
   import Cell from './components/Cell.svelte';
   import IconButton from './components/IconButton.svelte';
 
-	export let products;
+  export let products;
 
   function handleRemove(product) {
     if (confirm("Are you sure?")) {
