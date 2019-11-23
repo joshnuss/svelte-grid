@@ -1,10 +1,5 @@
 <script>
-  import Grid from './components/Grid.svelte';
-  import Columns from './components/Columns.svelte';
-  import Column from './components/Column.svelte';
-  import Rows from './components/Rows.svelte';
-  import Row from './components/Row.svelte';
-  import Cell from './components/Cell.svelte';
+  import Grid, {Columns, Column, Rows, Row, Cell} from './components/Grid.svelte';
   import IconButton from './components/IconButton.svelte';
 
   export let products;
