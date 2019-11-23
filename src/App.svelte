@@ -1,30 +1,30 @@
 <script>
-	export let name;
+  import Grid from './components/Grid.svelte';
+  import Row from './components/Row.svelte';
+  import Cell from './components/Cell.svelte';
+  import IconButton from './components/IconButton.svelte';
+
+	export let products;
+
+  function handleRemove(product) {
+    if (confirm("Are you sure?")) {
+      // ...
+    }
+  }
+
+  function handleClick(product) {
+    alert(`You clicked ${product.title}`)
+  }
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+  <Grid>
+    {#each products as product}
+      <Row on:click={() => handleClick(product)}>
+        <Cell>{product.title}</Cell>
+        <Cell>{product.price}</Cell>
+        <Cell><IconButton icon="trash" on:click={() => handleRemove(product)}/></Cell>
+      </Row>
+    {/each}
+  </Grid>
 </main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
